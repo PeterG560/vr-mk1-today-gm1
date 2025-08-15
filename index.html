@@ -3,244 +3,224 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>4RnH Mk.1 — Today (GM1)</title>
-  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
+  <title>VacantRooms — Owner (Mk.1) — Today (GM3)</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <!--
-    4RnH Mk.1 — TODAY PAGE (GM1 scaffold)
-    Notes:
-    - This is a lightweight, deployable scaffold to verify hosting & file layout.
-    - Visual grid markup is present for a 12 (rows) x 17 (columns) board.
-    - Colours, fonts, and exact labels can be iterated in GM2+.
-  -->
   <main id="app">
-    <header class="banner">
-      <div class="logo-col">
-        <img src="/assets/icons/gavaroso-mini-g.svg" alt="Gavaroso mini G" class="mini-g">
-      </div>
-      <div class="title">4rnh.net — OWNER (Mk.1)</div>
-      <div class="spacer"></div>
-    </header>
-
-    <section class="today-grid" aria-label="Today grid 12x17">
-      <!-- Build a 12 x 17 grid -->
-      <div class="grid">
-        <!-- 12 rows x 17 cols = 204 cells -->
-        <!-- We generate them here statically for simplicity -->
-        <div class="cell" data-r="1" data-c="1"></div>
-        <div class="cell" data-r="1" data-c="2"></div>
-        <div class="cell" data-r="1" data-c="3"></div>
-        <div class="cell" data-r="1" data-c="4"></div>
-        <div class="cell" data-r="1" data-c="5"></div>
-        <div class="cell" data-r="1" data-c="6"></div>
-        <div class="cell" data-r="1" data-c="7"></div>
-        <div class="cell" data-r="1" data-c="8"></div>
-        <div class="cell" data-r="1" data-c="9"></div>
-        <div class="cell" data-r="1" data-c="10"></div>
-        <div class="cell" data-r="1" data-c="11"></div>
-        <div class="cell" data-r="1" data-c="12"></div>
-        <div class="cell" data-r="1" data-c="13"></div>
-        <div class="cell" data-r="1" data-c="14"></div>
-        <div class="cell" data-r="1" data-c="15"></div>
-        <div class="cell" data-r="1" data-c="16"></div>
-        <div class="cell" data-r="1" data-c="17"></div>
-        <div class="cell" data-r="2" data-c="1"></div>
-        <div class="cell" data-r="2" data-c="2"></div>
-        <div class="cell" data-r="2" data-c="3"></div>
-        <div class="cell" data-r="2" data-c="4"></div>
-        <div class="cell" data-r="2" data-c="5"></div>
-        <div class="cell" data-r="2" data-c="6"></div>
-        <div class="cell" data-r="2" data-c="7"></div>
-        <div class="cell" data-r="2" data-c="8"></div>
-        <div class="cell" data-r="2" data-c="9"></div>
-        <div class="cell" data-r="2" data-c="10"></div>
-        <div class="cell" data-r="2" data-c="11"></div>
-        <div class="cell" data-r="2" data-c="12"></div>
-        <div class="cell" data-r="2" data-c="13"></div>
-        <div class="cell" data-r="2" data-c="14"></div>
-        <div class="cell" data-r="2" data-c="15"></div>
-        <div class="cell" data-r="2" data-c="16"></div>
-        <div class="cell" data-r="2" data-c="17"></div>
-        <div class="cell" data-r="3" data-c="1"></div>
-        <div class="cell" data-r="3" data-c="2"></div>
-        <div class="cell" data-r="3" data-c="3"></div>
-        <div class="cell" data-r="3" data-c="4"></div>
-        <div class="cell" data-r="3" data-c="5"></div>
-        <div class="cell" data-r="3" data-c="6"></div>
-        <div class="cell" data-r="3" data-c="7"></div>
-        <div class="cell" data-r="3" data-c="8"></div>
-        <div class="cell" data-r="3" data-c="9"></div>
-        <div class="cell" data-r="3" data-c="10"></div>
-        <div class="cell" data-r="3" data-c="11"></div>
-        <div class="cell" data-r="3" data-c="12"></div>
-        <div class="cell" data-r="3" data-c="13"></div>
-        <div class="cell" data-r="3" data-c="14"></div>
-        <div class="cell" data-r="3" data-c="15"></div>
-        <div class="cell" data-r="3" data-c="16"></div>
-        <div class="cell" data-r="3" data-c="17"></div>
-        <div class="cell" data-r="4" data-c="1"></div>
-        <div class="cell" data-r="4" data-c="2"></div>
-        <div class="cell" data-r="4" data-c="3"></div>
-        <div class="cell" data-r="4" data-c="4"></div>
-        <div class="cell" data-r="4" data-c="5"></div>
-        <div class="cell" data-r="4" data-c="6"></div>
-        <div class="cell" data-r="4" data-c="7"></div>
-        <div class="cell" data-r="4" data-c="8"></div>
-        <div class="cell" data-r="4" data-c="9"></div>
-        <div class="cell" data-r="4" data-c="10"></div>
-        <div class="cell" data-r="4" data-c="11"></div>
-        <div class="cell" data-r="4" data-c="12"></div>
-        <div class="cell" data-r="4" data-c="13"></div>
-        <div class="cell" data-r="4" data-c="14"></div>
-        <div class="cell" data-r="4" data-c="15"></div>
-        <div class="cell" data-r="4" data-c="16"></div>
-        <div class="cell" data-r="4" data-c="17"></div>
-        <div class="cell" data-r="5" data-c="1"></div>
-        <div class="cell" data-r="5" data-c="2"></div>
-        <div class="cell" data-r="5" data-c="3"></div>
-        <div class="cell" data-r="5" data-c="4"></div>
-        <div class="cell" data-r="5" data-c="5"></div>
-        <div class="cell" data-r="5" data-c="6"></div>
-        <div class="cell" data-r="5" data-c="7"></div>
-        <div class="cell" data-r="5" data-c="8"></div>
-        <div class="cell" data-r="5" data-c="9"></div>
-        <div class="cell" data-r="5" data-c="10"></div>
-        <div class="cell" data-r="5" data-c="11"></div>
-        <div class="cell" data-r="5" data-c="12"></div>
-        <div class="cell" data-r="5" data-c="13"></div>
-        <div class="cell" data-r="5" data-c="14"></div>
-        <div class="cell" data-r="5" data-c="15"></div>
-        <div class="cell" data-r="5" data-c="16"></div>
-        <div class="cell" data-r="5" data-c="17"></div>
-        <div class="cell" data-r="6" data-c="1"></div>
-        <div class="cell" data-r="6" data-c="2"></div>
-        <div class="cell" data-r="6" data-c="3"></div>
-        <div class="cell" data-r="6" data-c="4"></div>
-        <div class="cell" data-r="6" data-c="5"></div>
-        <div class="cell" data-r="6" data-c="6"></div>
-        <div class="cell" data-r="6" data-c="7"></div>
-        <div class="cell" data-r="6" data-c="8"></div>
-        <div class="cell" data-r="6" data-c="9"></div>
-        <div class="cell" data-r="6" data-c="10"></div>
-        <div class="cell" data-r="6" data-c="11"></div>
-        <div class="cell" data-r="6" data-c="12"></div>
-        <div class="cell" data-r="6" data-c="13"></div>
-        <div class="cell" data-r="6" data-c="14"></div>
-        <div class="cell" data-r="6" data-c="15"></div>
-        <div class="cell" data-r="6" data-c="16"></div>
-        <div class="cell" data-r="6" data-c="17"></div>
-        <div class="cell" data-r="7" data-c="1"></div>
-        <div class="cell" data-r="7" data-c="2"></div>
-        <div class="cell" data-r="7" data-c="3"></div>
-        <div class="cell" data-r="7" data-c="4"></div>
-        <div class="cell" data-r="7" data-c="5"></div>
-        <div class="cell" data-r="7" data-c="6"></div>
-        <div class="cell" data-r="7" data-c="7"></div>
-        <div class="cell" data-r="7" data-c="8"></div>
-        <div class="cell" data-r="7" data-c="9"></div>
-        <div class="cell" data-r="7" data-c="10"></div>
-        <div class="cell" data-r="7" data-c="11"></div>
-        <div class="cell" data-r="7" data-c="12"></div>
-        <div class="cell" data-r="7" data-c="13"></div>
-        <div class="cell" data-r="7" data-c="14"></div>
-        <div class="cell" data-r="7" data-c="15"></div>
-        <div class="cell" data-r="7" data-c="16"></div>
-        <div class="cell" data-r="7" data-c="17"></div>
-        <div class="cell" data-r="8" data-c="1"></div>
-        <div class="cell" data-r="8" data-c="2"></div>
-        <div class="cell" data-r="8" data-c="3"></div>
-        <div class="cell" data-r="8" data-c="4"></div>
-        <div class="cell" data-r="8" data-c="5"></div>
-        <div class="cell" data-r="8" data-c="6"></div>
-        <div class="cell" data-r="8" data-c="7"></div>
-        <div class="cell" data-r="8" data-c="8"></div>
-        <div class="cell" data-r="8" data-c="9"></div>
-        <div class="cell" data-r="8" data-c="10"></div>
-        <div class="cell" data-r="8" data-c="11"></div>
-        <div class="cell" data-r="8" data-c="12"></div>
-        <div class="cell" data-r="8" data-c="13"></div>
-        <div class="cell" data-r="8" data-c="14"></div>
-        <div class="cell" data-r="8" data-c="15"></div>
-        <div class="cell" data-r="8" data-c="16"></div>
-        <div class="cell" data-r="8" data-c="17"></div>
-        <div class="cell" data-r="9" data-c="1"></div>
-        <div class="cell" data-r="9" data-c="2"></div>
-        <div class="cell" data-r="9" data-c="3"></div>
-        <div class="cell" data-r="9" data-c="4"></div>
-        <div class="cell" data-r="9" data-c="5"></div>
-        <div class="cell" data-r="9" data-c="6"></div>
-        <div class="cell" data-r="9" data-c="7"></div>
-        <div class="cell" data-r="9" data-c="8"></div>
-        <div class="cell" data-r="9" data-c="9"></div>
-        <div class="cell" data-r="9" data-c="10"></div>
-        <div class="cell" data-r="9" data-c="11"></div>
-        <div class="cell" data-r="9" data-c="12"></div>
-        <div class="cell" data-r="9" data-c="13"></div>
-        <div class="cell" data-r="9" data-c="14"></div>
-        <div class="cell" data-r="9" data-c="15"></div>
-        <div class="cell" data-r="9" data-c="16"></div>
-        <div class="cell" data-r="9" data-c="17"></div>
-        <div class="cell" data-r="10" data-c="1"></div>
-        <div class="cell" data-r="10" data-c="2"></div>
-        <div class="cell" data-r="10" data-c="3"></div>
-        <div class="cell" data-r="10" data-c="4"></div>
-        <div class="cell" data-r="10" data-c="5"></div>
-        <div class="cell" data-r="10" data-c="6"></div>
-        <div class="cell" data-r="10" data-c="7"></div>
-        <div class="cell" data-r="10" data-c="8"></div>
-        <div class="cell" data-r="10" data-c="9"></div>
-        <div class="cell" data-r="10" data-c="10"></div>
-        <div class="cell" data-r="10" data-c="11"></div>
-        <div class="cell" data-r="10" data-c="12"></div>
-        <div class="cell" data-r="10" data-c="13"></div>
-        <div class="cell" data-r="10" data-c="14"></div>
-        <div class="cell" data-r="10" data-c="15"></div>
-        <div class="cell" data-r="10" data-c="16"></div>
-        <div class="cell" data-r="10" data-c="17"></div>
-        <div class="cell" data-r="11" data-c="1"></div>
-        <div class="cell" data-r="11" data-c="2"></div>
-        <div class="cell" data-r="11" data-c="3"></div>
-        <div class="cell" data-r="11" data-c="4"></div>
-        <div class="cell" data-r="11" data-c="5"></div>
-        <div class="cell" data-r="11" data-c="6"></div>
-        <div class="cell" data-r="11" data-c="7"></div>
-        <div class="cell" data-r="11" data-c="8"></div>
-        <div class="cell" data-r="11" data-c="9"></div>
-        <div class="cell" data-r="11" data-c="10"></div>
-        <div class="cell" data-r="11" data-c="11"></div>
-        <div class="cell" data-r="11" data-c="12"></div>
-        <div class="cell" data-r="11" data-c="13"></div>
-        <div class="cell" data-r="11" data-c="14"></div>
-        <div class="cell" data-r="11" data-c="15"></div>
-        <div class="cell" data-r="11" data-c="16"></div>
-        <div class="cell" data-r="11" data-c="17"></div>
-        <div class="cell" data-r="12" data-c="1"></div>
-        <div class="cell" data-r="12" data-c="2"></div>
-        <div class="cell" data-r="12" data-c="3"></div>
-        <div class="cell" data-r="12" data-c="4"></div>
-        <div class="cell" data-r="12" data-c="5"></div>
-        <div class="cell" data-r="12" data-c="6"></div>
-        <div class="cell" data-r="12" data-c="7"></div>
-        <div class="cell" data-r="12" data-c="8"></div>
-        <div class="cell" data-r="12" data-c="9"></div>
-        <div class="cell" data-r="12" data-c="10"></div>
-        <div class="cell" data-r="12" data-c="11"></div>
-        <div class="cell" data-r="12" data-c="12"></div>
-        <div class="cell" data-r="12" data-c="13"></div>
-        <div class="cell" data-r="12" data-c="14"></div>
-        <div class="cell" data-r="12" data-c="15"></div>
-        <div class="cell" data-r="12" data-c="16"></div>
-        <div class="cell" data-r="12" data-c="17"></div>
-      </div>
+    <section class="board" aria-label="Today board with Column 1 header and grid">
+      <aside class="col1" aria-label="Column 1 header">
+        <div class="col1-top">
+          <img src="./assets/icons/gavaroso-mini-g.svg" alt="" class="mini-g" />
+        </div>
+        <div class="col1-text">
+          <div class="col1-line vr">VacantRooms<br><span class="dotcom">.com</span></div>
+          <div class="col1-line owners">Owner’s<br>Edition</div>
+        </div>
+      </aside>
+      <section class="grid-wrap" aria-label="Main grid columns B–Q">
+        <div class="grid" role="grid" aria-rowcount="12" aria-colcount="16">
+          <div class="cell" data-r="1" data-c="1" role="gridcell" aria-rowindex="1" aria-colindex="1"></div>
+          <div class="cell" data-r="1" data-c="2" role="gridcell" aria-rowindex="1" aria-colindex="2"></div>
+          <div class="cell" data-r="1" data-c="3" role="gridcell" aria-rowindex="1" aria-colindex="3"></div>
+          <div class="cell" data-r="1" data-c="4" role="gridcell" aria-rowindex="1" aria-colindex="4"></div>
+          <div class="cell" data-r="1" data-c="5" role="gridcell" aria-rowindex="1" aria-colindex="5"></div>
+          <div class="cell" data-r="1" data-c="6" role="gridcell" aria-rowindex="1" aria-colindex="6"></div>
+          <div class="cell" data-r="1" data-c="7" role="gridcell" aria-rowindex="1" aria-colindex="7"></div>
+          <div class="cell" data-r="1" data-c="8" role="gridcell" aria-rowindex="1" aria-colindex="8"></div>
+          <div class="cell" data-r="1" data-c="9" role="gridcell" aria-rowindex="1" aria-colindex="9"></div>
+          <div class="cell" data-r="1" data-c="10" role="gridcell" aria-rowindex="1" aria-colindex="10"></div>
+          <div class="cell" data-r="1" data-c="11" role="gridcell" aria-rowindex="1" aria-colindex="11"></div>
+          <div class="cell" data-r="1" data-c="12" role="gridcell" aria-rowindex="1" aria-colindex="12"></div>
+          <div class="cell" data-r="1" data-c="13" role="gridcell" aria-rowindex="1" aria-colindex="13"></div>
+          <div class="cell" data-r="1" data-c="14" role="gridcell" aria-rowindex="1" aria-colindex="14"></div>
+          <div class="cell" data-r="1" data-c="15" role="gridcell" aria-rowindex="1" aria-colindex="15"></div>
+          <div class="cell" data-r="1" data-c="16" role="gridcell" aria-rowindex="1" aria-colindex="16"></div>
+          <div class="cell" data-r="2" data-c="1" role="gridcell" aria-rowindex="2" aria-colindex="1"></div>
+          <div class="cell" data-r="2" data-c="2" role="gridcell" aria-rowindex="2" aria-colindex="2"></div>
+          <div class="cell" data-r="2" data-c="3" role="gridcell" aria-rowindex="2" aria-colindex="3"></div>
+          <div class="cell" data-r="2" data-c="4" role="gridcell" aria-rowindex="2" aria-colindex="4"></div>
+          <div class="cell" data-r="2" data-c="5" role="gridcell" aria-rowindex="2" aria-colindex="5"></div>
+          <div class="cell" data-r="2" data-c="6" role="gridcell" aria-rowindex="2" aria-colindex="6"></div>
+          <div class="cell" data-r="2" data-c="7" role="gridcell" aria-rowindex="2" aria-colindex="7"></div>
+          <div class="cell" data-r="2" data-c="8" role="gridcell" aria-rowindex="2" aria-colindex="8"></div>
+          <div class="cell" data-r="2" data-c="9" role="gridcell" aria-rowindex="2" aria-colindex="9"></div>
+          <div class="cell" data-r="2" data-c="10" role="gridcell" aria-rowindex="2" aria-colindex="10"></div>
+          <div class="cell" data-r="2" data-c="11" role="gridcell" aria-rowindex="2" aria-colindex="11"></div>
+          <div class="cell" data-r="2" data-c="12" role="gridcell" aria-rowindex="2" aria-colindex="12"></div>
+          <div class="cell" data-r="2" data-c="13" role="gridcell" aria-rowindex="2" aria-colindex="13"></div>
+          <div class="cell" data-r="2" data-c="14" role="gridcell" aria-rowindex="2" aria-colindex="14"></div>
+          <div class="cell" data-r="2" data-c="15" role="gridcell" aria-rowindex="2" aria-colindex="15"></div>
+          <div class="cell" data-r="2" data-c="16" role="gridcell" aria-rowindex="2" aria-colindex="16"></div>
+          <div class="cell" data-r="3" data-c="1" role="gridcell" aria-rowindex="3" aria-colindex="1"></div>
+          <div class="cell" data-r="3" data-c="2" role="gridcell" aria-rowindex="3" aria-colindex="2"></div>
+          <div class="cell" data-r="3" data-c="3" role="gridcell" aria-rowindex="3" aria-colindex="3"></div>
+          <div class="cell" data-r="3" data-c="4" role="gridcell" aria-rowindex="3" aria-colindex="4"></div>
+          <div class="cell" data-r="3" data-c="5" role="gridcell" aria-rowindex="3" aria-colindex="5"></div>
+          <div class="cell" data-r="3" data-c="6" role="gridcell" aria-rowindex="3" aria-colindex="6"></div>
+          <div class="cell" data-r="3" data-c="7" role="gridcell" aria-rowindex="3" aria-colindex="7"></div>
+          <div class="cell" data-r="3" data-c="8" role="gridcell" aria-rowindex="3" aria-colindex="8"></div>
+          <div class="cell" data-r="3" data-c="9" role="gridcell" aria-rowindex="3" aria-colindex="9"></div>
+          <div class="cell" data-r="3" data-c="10" role="gridcell" aria-rowindex="3" aria-colindex="10"></div>
+          <div class="cell" data-r="3" data-c="11" role="gridcell" aria-rowindex="3" aria-colindex="11"></div>
+          <div class="cell" data-r="3" data-c="12" role="gridcell" aria-rowindex="3" aria-colindex="12"></div>
+          <div class="cell" data-r="3" data-c="13" role="gridcell" aria-rowindex="3" aria-colindex="13"></div>
+          <div class="cell" data-r="3" data-c="14" role="gridcell" aria-rowindex="3" aria-colindex="14"></div>
+          <div class="cell" data-r="3" data-c="15" role="gridcell" aria-rowindex="3" aria-colindex="15"></div>
+          <div class="cell" data-r="3" data-c="16" role="gridcell" aria-rowindex="3" aria-colindex="16"></div>
+          <div class="cell" data-r="4" data-c="1" role="gridcell" aria-rowindex="4" aria-colindex="1"></div>
+          <div class="cell" data-r="4" data-c="2" role="gridcell" aria-rowindex="4" aria-colindex="2"></div>
+          <div class="cell" data-r="4" data-c="3" role="gridcell" aria-rowindex="4" aria-colindex="3"></div>
+          <div class="cell" data-r="4" data-c="4" role="gridcell" aria-rowindex="4" aria-colindex="4"></div>
+          <div class="cell" data-r="4" data-c="5" role="gridcell" aria-rowindex="4" aria-colindex="5"></div>
+          <div class="cell" data-r="4" data-c="6" role="gridcell" aria-rowindex="4" aria-colindex="6"></div>
+          <div class="cell" data-r="4" data-c="7" role="gridcell" aria-rowindex="4" aria-colindex="7"></div>
+          <div class="cell" data-r="4" data-c="8" role="gridcell" aria-rowindex="4" aria-colindex="8"></div>
+          <div class="cell" data-r="4" data-c="9" role="gridcell" aria-rowindex="4" aria-colindex="9"></div>
+          <div class="cell" data-r="4" data-c="10" role="gridcell" aria-rowindex="4" aria-colindex="10"></div>
+          <div class="cell" data-r="4" data-c="11" role="gridcell" aria-rowindex="4" aria-colindex="11"></div>
+          <div class="cell" data-r="4" data-c="12" role="gridcell" aria-rowindex="4" aria-colindex="12"></div>
+          <div class="cell" data-r="4" data-c="13" role="gridcell" aria-rowindex="4" aria-colindex="13"></div>
+          <div class="cell" data-r="4" data-c="14" role="gridcell" aria-rowindex="4" aria-colindex="14"></div>
+          <div class="cell" data-r="4" data-c="15" role="gridcell" aria-rowindex="4" aria-colindex="15"></div>
+          <div class="cell" data-r="4" data-c="16" role="gridcell" aria-rowindex="4" aria-colindex="16"></div>
+          <div class="cell" data-r="5" data-c="1" role="gridcell" aria-rowindex="5" aria-colindex="1"></div>
+          <div class="cell" data-r="5" data-c="2" role="gridcell" aria-rowindex="5" aria-colindex="2"></div>
+          <div class="cell" data-r="5" data-c="3" role="gridcell" aria-rowindex="5" aria-colindex="3"></div>
+          <div class="cell" data-r="5" data-c="4" role="gridcell" aria-rowindex="5" aria-colindex="4"></div>
+          <div class="cell" data-r="5" data-c="5" role="gridcell" aria-rowindex="5" aria-colindex="5"></div>
+          <div class="cell" data-r="5" data-c="6" role="gridcell" aria-rowindex="5" aria-colindex="6"></div>
+          <div class="cell" data-r="5" data-c="7" role="gridcell" aria-rowindex="5" aria-colindex="7"></div>
+          <div class="cell" data-r="5" data-c="8" role="gridcell" aria-rowindex="5" aria-colindex="8"></div>
+          <div class="cell" data-r="5" data-c="9" role="gridcell" aria-rowindex="5" aria-colindex="9"></div>
+          <div class="cell" data-r="5" data-c="10" role="gridcell" aria-rowindex="5" aria-colindex="10"></div>
+          <div class="cell" data-r="5" data-c="11" role="gridcell" aria-rowindex="5" aria-colindex="11"></div>
+          <div class="cell" data-r="5" data-c="12" role="gridcell" aria-rowindex="5" aria-colindex="12"></div>
+          <div class="cell" data-r="5" data-c="13" role="gridcell" aria-rowindex="5" aria-colindex="13"></div>
+          <div class="cell" data-r="5" data-c="14" role="gridcell" aria-rowindex="5" aria-colindex="14"></div>
+          <div class="cell" data-r="5" data-c="15" role="gridcell" aria-rowindex="5" aria-colindex="15"></div>
+          <div class="cell" data-r="5" data-c="16" role="gridcell" aria-rowindex="5" aria-colindex="16"></div>
+          <div class="cell" data-r="6" data-c="1" role="gridcell" aria-rowindex="6" aria-colindex="1"></div>
+          <div class="cell" data-r="6" data-c="2" role="gridcell" aria-rowindex="6" aria-colindex="2"></div>
+          <div class="cell" data-r="6" data-c="3" role="gridcell" aria-rowindex="6" aria-colindex="3"></div>
+          <div class="cell" data-r="6" data-c="4" role="gridcell" aria-rowindex="6" aria-colindex="4"></div>
+          <div class="cell" data-r="6" data-c="5" role="gridcell" aria-rowindex="6" aria-colindex="5"></div>
+          <div class="cell" data-r="6" data-c="6" role="gridcell" aria-rowindex="6" aria-colindex="6"></div>
+          <div class="cell" data-r="6" data-c="7" role="gridcell" aria-rowindex="6" aria-colindex="7"></div>
+          <div class="cell" data-r="6" data-c="8" role="gridcell" aria-rowindex="6" aria-colindex="8"></div>
+          <div class="cell" data-r="6" data-c="9" role="gridcell" aria-rowindex="6" aria-colindex="9"></div>
+          <div class="cell" data-r="6" data-c="10" role="gridcell" aria-rowindex="6" aria-colindex="10"></div>
+          <div class="cell" data-r="6" data-c="11" role="gridcell" aria-rowindex="6" aria-colindex="11"></div>
+          <div class="cell" data-r="6" data-c="12" role="gridcell" aria-rowindex="6" aria-colindex="12"></div>
+          <div class="cell" data-r="6" data-c="13" role="gridcell" aria-rowindex="6" aria-colindex="13"></div>
+          <div class="cell" data-r="6" data-c="14" role="gridcell" aria-rowindex="6" aria-colindex="14"></div>
+          <div class="cell" data-r="6" data-c="15" role="gridcell" aria-rowindex="6" aria-colindex="15"></div>
+          <div class="cell" data-r="6" data-c="16" role="gridcell" aria-rowindex="6" aria-colindex="16"></div>
+          <div class="cell" data-r="7" data-c="1" role="gridcell" aria-rowindex="7" aria-colindex="1"></div>
+          <div class="cell" data-r="7" data-c="2" role="gridcell" aria-rowindex="7" aria-colindex="2"></div>
+          <div class="cell" data-r="7" data-c="3" role="gridcell" aria-rowindex="7" aria-colindex="3"></div>
+          <div class="cell" data-r="7" data-c="4" role="gridcell" aria-rowindex="7" aria-colindex="4"></div>
+          <div class="cell" data-r="7" data-c="5" role="gridcell" aria-rowindex="7" aria-colindex="5"></div>
+          <div class="cell" data-r="7" data-c="6" role="gridcell" aria-rowindex="7" aria-colindex="6"></div>
+          <div class="cell" data-r="7" data-c="7" role="gridcell" aria-rowindex="7" aria-colindex="7"></div>
+          <div class="cell" data-r="7" data-c="8" role="gridcell" aria-rowindex="7" aria-colindex="8"></div>
+          <div class="cell" data-r="7" data-c="9" role="gridcell" aria-rowindex="7" aria-colindex="9"></div>
+          <div class="cell" data-r="7" data-c="10" role="gridcell" aria-rowindex="7" aria-colindex="10"></div>
+          <div class="cell" data-r="7" data-c="11" role="gridcell" aria-rowindex="7" aria-colindex="11"></div>
+          <div class="cell" data-r="7" data-c="12" role="gridcell" aria-rowindex="7" aria-colindex="12"></div>
+          <div class="cell" data-r="7" data-c="13" role="gridcell" aria-rowindex="7" aria-colindex="13"></div>
+          <div class="cell" data-r="7" data-c="14" role="gridcell" aria-rowindex="7" aria-colindex="14"></div>
+          <div class="cell" data-r="7" data-c="15" role="gridcell" aria-rowindex="7" aria-colindex="15"></div>
+          <div class="cell" data-r="7" data-c="16" role="gridcell" aria-rowindex="7" aria-colindex="16"></div>
+          <div class="cell" data-r="8" data-c="1" role="gridcell" aria-rowindex="8" aria-colindex="1"></div>
+          <div class="cell" data-r="8" data-c="2" role="gridcell" aria-rowindex="8" aria-colindex="2"></div>
+          <div class="cell" data-r="8" data-c="3" role="gridcell" aria-rowindex="8" aria-colindex="3"></div>
+          <div class="cell" data-r="8" data-c="4" role="gridcell" aria-rowindex="8" aria-colindex="4"></div>
+          <div class="cell" data-r="8" data-c="5" role="gridcell" aria-rowindex="8" aria-colindex="5"></div>
+          <div class="cell" data-r="8" data-c="6" role="gridcell" aria-rowindex="8" aria-colindex="6"></div>
+          <div class="cell" data-r="8" data-c="7" role="gridcell" aria-rowindex="8" aria-colindex="7"></div>
+          <div class="cell" data-r="8" data-c="8" role="gridcell" aria-rowindex="8" aria-colindex="8"></div>
+          <div class="cell" data-r="8" data-c="9" role="gridcell" aria-rowindex="8" aria-colindex="9"></div>
+          <div class="cell" data-r="8" data-c="10" role="gridcell" aria-rowindex="8" aria-colindex="10"></div>
+          <div class="cell" data-r="8" data-c="11" role="gridcell" aria-rowindex="8" aria-colindex="11"></div>
+          <div class="cell" data-r="8" data-c="12" role="gridcell" aria-rowindex="8" aria-colindex="12"></div>
+          <div class="cell" data-r="8" data-c="13" role="gridcell" aria-rowindex="8" aria-colindex="13"></div>
+          <div class="cell" data-r="8" data-c="14" role="gridcell" aria-rowindex="8" aria-colindex="14"></div>
+          <div class="cell" data-r="8" data-c="15" role="gridcell" aria-rowindex="8" aria-colindex="15"></div>
+          <div class="cell" data-r="8" data-c="16" role="gridcell" aria-rowindex="8" aria-colindex="16"></div>
+          <div class="cell" data-r="9" data-c="1" role="gridcell" aria-rowindex="9" aria-colindex="1"></div>
+          <div class="cell" data-r="9" data-c="2" role="gridcell" aria-rowindex="9" aria-colindex="2"></div>
+          <div class="cell" data-r="9" data-c="3" role="gridcell" aria-rowindex="9" aria-colindex="3"></div>
+          <div class="cell" data-r="9" data-c="4" role="gridcell" aria-rowindex="9" aria-colindex="4"></div>
+          <div class="cell" data-r="9" data-c="5" role="gridcell" aria-rowindex="9" aria-colindex="5"></div>
+          <div class="cell" data-r="9" data-c="6" role="gridcell" aria-rowindex="9" aria-colindex="6"></div>
+          <div class="cell" data-r="9" data-c="7" role="gridcell" aria-rowindex="9" aria-colindex="7"></div>
+          <div class="cell" data-r="9" data-c="8" role="gridcell" aria-rowindex="9" aria-colindex="8"></div>
+          <div class="cell" data-r="9" data-c="9" role="gridcell" aria-rowindex="9" aria-colindex="9"></div>
+          <div class="cell" data-r="9" data-c="10" role="gridcell" aria-rowindex="9" aria-colindex="10"></div>
+          <div class="cell" data-r="9" data-c="11" role="gridcell" aria-rowindex="9" aria-colindex="11"></div>
+          <div class="cell" data-r="9" data-c="12" role="gridcell" aria-rowindex="9" aria-colindex="12"></div>
+          <div class="cell" data-r="9" data-c="13" role="gridcell" aria-rowindex="9" aria-colindex="13"></div>
+          <div class="cell" data-r="9" data-c="14" role="gridcell" aria-rowindex="9" aria-colindex="14"></div>
+          <div class="cell" data-r="9" data-c="15" role="gridcell" aria-rowindex="9" aria-colindex="15"></div>
+          <div class="cell" data-r="9" data-c="16" role="gridcell" aria-rowindex="9" aria-colindex="16"></div>
+          <div class="cell" data-r="10" data-c="1" role="gridcell" aria-rowindex="10" aria-colindex="1"></div>
+          <div class="cell" data-r="10" data-c="2" role="gridcell" aria-rowindex="10" aria-colindex="2"></div>
+          <div class="cell" data-r="10" data-c="3" role="gridcell" aria-rowindex="10" aria-colindex="3"></div>
+          <div class="cell" data-r="10" data-c="4" role="gridcell" aria-rowindex="10" aria-colindex="4"></div>
+          <div class="cell" data-r="10" data-c="5" role="gridcell" aria-rowindex="10" aria-colindex="5"></div>
+          <div class="cell" data-r="10" data-c="6" role="gridcell" aria-rowindex="10" aria-colindex="6"></div>
+          <div class="cell" data-r="10" data-c="7" role="gridcell" aria-rowindex="10" aria-colindex="7"></div>
+          <div class="cell" data-r="10" data-c="8" role="gridcell" aria-rowindex="10" aria-colindex="8"></div>
+          <div class="cell" data-r="10" data-c="9" role="gridcell" aria-rowindex="10" aria-colindex="9"></div>
+          <div class="cell" data-r="10" data-c="10" role="gridcell" aria-rowindex="10" aria-colindex="10"></div>
+          <div class="cell" data-r="10" data-c="11" role="gridcell" aria-rowindex="10" aria-colindex="11"></div>
+          <div class="cell" data-r="10" data-c="12" role="gridcell" aria-rowindex="10" aria-colindex="12"></div>
+          <div class="cell" data-r="10" data-c="13" role="gridcell" aria-rowindex="10" aria-colindex="13"></div>
+          <div class="cell" data-r="10" data-c="14" role="gridcell" aria-rowindex="10" aria-colindex="14"></div>
+          <div class="cell" data-r="10" data-c="15" role="gridcell" aria-rowindex="10" aria-colindex="15"></div>
+          <div class="cell" data-r="10" data-c="16" role="gridcell" aria-rowindex="10" aria-colindex="16"></div>
+          <div class="cell" data-r="11" data-c="1" role="gridcell" aria-rowindex="11" aria-colindex="1"></div>
+          <div class="cell" data-r="11" data-c="2" role="gridcell" aria-rowindex="11" aria-colindex="2"></div>
+          <div class="cell" data-r="11" data-c="3" role="gridcell" aria-rowindex="11" aria-colindex="3"></div>
+          <div class="cell" data-r="11" data-c="4" role="gridcell" aria-rowindex="11" aria-colindex="4"></div>
+          <div class="cell" data-r="11" data-c="5" role="gridcell" aria-rowindex="11" aria-colindex="5"></div>
+          <div class="cell" data-r="11" data-c="6" role="gridcell" aria-rowindex="11" aria-colindex="6"></div>
+          <div class="cell" data-r="11" data-c="7" role="gridcell" aria-rowindex="11" aria-colindex="7"></div>
+          <div class="cell" data-r="11" data-c="8" role="gridcell" aria-rowindex="11" aria-colindex="8"></div>
+          <div class="cell" data-r="11" data-c="9" role="gridcell" aria-rowindex="11" aria-colindex="9"></div>
+          <div class="cell" data-r="11" data-c="10" role="gridcell" aria-rowindex="11" aria-colindex="10"></div>
+          <div class="cell" data-r="11" data-c="11" role="gridcell" aria-rowindex="11" aria-colindex="11"></div>
+          <div class="cell" data-r="11" data-c="12" role="gridcell" aria-rowindex="11" aria-colindex="12"></div>
+          <div class="cell" data-r="11" data-c="13" role="gridcell" aria-rowindex="11" aria-colindex="13"></div>
+          <div class="cell" data-r="11" data-c="14" role="gridcell" aria-rowindex="11" aria-colindex="14"></div>
+          <div class="cell" data-r="11" data-c="15" role="gridcell" aria-rowindex="11" aria-colindex="15"></div>
+          <div class="cell" data-r="11" data-c="16" role="gridcell" aria-rowindex="11" aria-colindex="16"></div>
+          <div class="cell" data-r="12" data-c="1" role="gridcell" aria-rowindex="12" aria-colindex="1"></div>
+          <div class="cell" data-r="12" data-c="2" role="gridcell" aria-rowindex="12" aria-colindex="2"></div>
+          <div class="cell" data-r="12" data-c="3" role="gridcell" aria-rowindex="12" aria-colindex="3"></div>
+          <div class="cell" data-r="12" data-c="4" role="gridcell" aria-rowindex="12" aria-colindex="4"></div>
+          <div class="cell" data-r="12" data-c="5" role="gridcell" aria-rowindex="12" aria-colindex="5"></div>
+          <div class="cell" data-r="12" data-c="6" role="gridcell" aria-rowindex="12" aria-colindex="6"></div>
+          <div class="cell" data-r="12" data-c="7" role="gridcell" aria-rowindex="12" aria-colindex="7"></div>
+          <div class="cell" data-r="12" data-c="8" role="gridcell" aria-rowindex="12" aria-colindex="8"></div>
+          <div class="cell" data-r="12" data-c="9" role="gridcell" aria-rowindex="12" aria-colindex="9"></div>
+          <div class="cell" data-r="12" data-c="10" role="gridcell" aria-rowindex="12" aria-colindex="10"></div>
+          <div class="cell" data-r="12" data-c="11" role="gridcell" aria-rowindex="12" aria-colindex="11"></div>
+          <div class="cell" data-r="12" data-c="12" role="gridcell" aria-rowindex="12" aria-colindex="12"></div>
+          <div class="cell" data-r="12" data-c="13" role="gridcell" aria-rowindex="12" aria-colindex="13"></div>
+          <div class="cell" data-r="12" data-c="14" role="gridcell" aria-rowindex="12" aria-colindex="14"></div>
+          <div class="cell" data-r="12" data-c="15" role="gridcell" aria-rowindex="12" aria-colindex="15"></div>
+          <div class="cell" data-r="12" data-c="16" role="gridcell" aria-rowindex="12" aria-colindex="16"></div>
+        </div>
+      </section>
     </section>
-
-    <footer class="menubar">
-      <button class="btn help">Help</button>
-      <button class="btn enquiries">Enquiries</button>
-      <button class="btn reports">Reports</button>
-      <button class="btn setup">Setup</button>
+    <footer class="menubar" role="contentinfo">
+      <button class="btn help" aria-label="Help">Help</button>
+      <button class="btn enquiries" aria-label="Enquiries">Enquiries</button>
+      <button class="btn reports" aria-label="Reports">Reports</button>
+      <button class="btn setup" aria-label="Setup">Setup</button>
     </footer>
   </main>
 </body>

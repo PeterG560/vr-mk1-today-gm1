@@ -1,22 +1,13 @@
-# 4RnH Mk.1 — Today (GM1)
+# VacantRooms Mk.1 — Today (GM3)
 
-This package is a **whole drop-in** for your GitHub → Vercel flow, using the new tagging convention.
+Changes from GM2:
+- Column 1 as dedicated vertical header with G logo at top.
+- VacantRooms/.com and Owner's Edition vertically from bottom to top.
+- Grid beside header is 12x16 (B–Q).
 
-## Files
-- `index.html` — deployable scaffold with a 12x17 grid placeholder.
-- `styles.css` — base colours approximating the Excel accents you specified.
-- `vercel.json` — static deploy with a catch-all route for SPA-style hosting.
-- `assets/icons/*` — favicon + Gavaroso mini 'G'.
-
-## Deploy steps (GitHub → Vercel)
-1. Create or open your repo. Click **Add file → Upload files** and drag **the contents of this folder**.
-2. Commit directly to `main`.
-3. GitHub → **Releases → Draft a new release**:
-   - **Tag:** `mk1-today-gm1` (create new tag on `main`)
-   - **Tick:** *This is a pre-release*
-   - **Title:** `GM 1: Mk1 Today`
-4. Publish. Vercel will pick up `main` automatically if connected.
-
-## Notes
-- Treat this as a GM scaffold to practice the end-to-end flow.
-- We can iterate visuals/content in `mk1-today-gm2` or `mk1-today-gm1-r1`.
+Deploy:
+1. GitHub → vr-mk1-today-gm1 → Add file → Upload files.
+2. Drag contents of folder (not folder itself).
+3. Commit to main.
+4. Verify in Vercel.
+5. Tag new pre-release mk1-today-gm3.
