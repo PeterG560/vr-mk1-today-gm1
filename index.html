@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4RnH Mk.1 — Today (GM1)</title>
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!--
+    4RnH Mk.1 — TODAY PAGE (GM1 scaffold)
+    Notes:
+    - This is a lightweight, deployable scaffold to verify hosting & file layout.
+    - Visual grid markup is present for a 12 (rows) x 17 (columns) board.
+    - Colours, fonts, and exact labels can be iterated in GM2+.
+  -->
+  <main id="app">
+    <header class="banner">
+      <div class="logo-col">
+        <img src="/assets/icons/gavaroso-mini-g.svg" alt="Gavaroso mini G" class="mini-g">
+      </div>
+      <div class="title">4rnh.net — OWNER (Mk.1)</div>
+      <div class="spacer"></div>
+    </header>
+
+    <section class="today-grid" aria-label="Today grid 12x17">
+      <!-- Build a 12 x 17 grid -->
+      <div class="grid">
+        <!-- 12 rows x 17 cols = 204 cells -->
+        <!-- We generate them here statically for simplicity -->
+        <div class="cell" data-r="1" data-c="1"></div>
+        <div class="cell" data-r="1" data-c="2"></div>
+        <div class="cell" data-r="1" data-c="3"></div>
+        <div class="cell" data-r="1" data-c="4"></div>
+        <div class="cell" data-r="1" data-c="5"></div>
+        <div class="cell" data-r="1" data-c="6"></div>
+        <div class="cell" data-r="1" data-c="7"></div>
+        <div class="cell" data-r="1" data-c="8"></div>
+        <div class="cell" data-r="1" data-c="9"></div>
+        <div class="cell" data-r="1" data-c="10"></div>
+        <div class="cell" data-r="1" data-c="11"></div>
+        <div class="cell" data-r="1" data-c="12"></div>
+        <div class="cell" data-r="1" data-c="13"></div>
+        <div class="cell" data-r="1" data-c="14"></div>
+        <div class="cell" data-r="1" data-c="15"></div>
+        <div class="cell" data-r="1" data-c="16"></div>
+        <div class="cell" data-r="1" data-c="17"></div>
+        <div class="cell" data-r="2" data-c="1"></div>
+        <div class="cell" data-r="2" data-c="2"></div>
+        <div class="cell" data-r="2" data-c="3"></div>
+        <div class="cell" data-r="2" data-c="4"></div>
+        <div class="cell" data-r="2" data-c="5"></div>
+        <div class="cell" data-r="2" data-c="6"></div>
+        <div class="cell" data-r="2" data-c="7"></div>
+        <div class="cell" data-r="2" data-c="8"></div>
+        <div class="cell" data-r="2" data-c="9"></div>
+        <div class="cell" data-r="2" data-c="10"></div>
+        <div class="cell" data-r="2" data-c="11"></div>
+        <div class="cell" data-r="2" data-c="12"></div>
+        <div class="cell" data-r="2" data-c="13"></div>
+        <div class="cell" data-r="2" data-c="14"></div>
+        <div class="cell" data-r="2" data-c="15"></div>
+        <div class="cell" data-r="2" data-c="16"></div>
+        <div class="cell" data-r="2" data-c="17"></div>
+        <div class="cell" data-r="3" data-c="1"></div>
+        <div class="cell" data-r="3" data-c="2"></div>
+        <div class="cell" data-r="3" data-c="3"></div>
+        <div class="cell" data-r="3" data-c="4"></div>
+        <div class="cell" data-r="3" data-c="5"></div>
+        <div class="cell" data-r="3" data-c="6"></div>
+        <div class="cell" data-r="3" data-c="7"></div>
+        <div class="cell" data-r="3" data-c="8"></div>
+        <div class="cell" data-r="3" data-c="9"></div>
+        <div class="cell" data-r="3" data-c="10"></div>
+        <div class="cell" data-r="3" data-c="11"></div>
+        <div class="cell" data-r="3" data-c="12"></div>
+        <div class="cell" data-r="3" data-c="13"></div>
+        <div class="cell" data-r="3" data-c="14"></div>
+        <div class="cell" data-r="3" data-c="15"></div>
+        <div class="cell" data-r="3" data-c="16"></div>
+        <div class="cell" data-r="3" data-c="17"></div>
+        <div class="cell" data-r="4" data-c="1"></div>
+        <div class="cell" data-r="4" data-c="2"></div>
+        <div class="cell" data-r="4" data-c="3"></div>
+        <div class="cell" data-r="4" data-c="4"></div>
+        <div class="cell" data-r="4" data-c="5"></div>
+        <div class="cell" data-r="4" data-c="6"></div>
+        <div class="cell" data-r="4" data-c="7"></div>
+        <div class="cell" data-r="4" data-c="8"></div>
+        <div class="cell" data-r="4" data-c="9"></div>
+        <div class="cell" data-r="4" data-c="10"></div>
+        <div class="cell" data-r="4" data-c="11"></div>
+        <div class="cell" data-r="4" data-c="12"></div>
+        <div class="cell" data-r="4" data-c="13"></div>
+        <div class="cell" data-r="4" data-c="14"></div>
+        <div class="cell" data-r="4" data-c="15"></div>
+        <div class="cell" data-r="4" data-c="16"></div>
+        <div class="cell" data-r="4" data-c="17"></div>
+        <div class="cell" data-r="5" data-c="1"></div>
+        <div class="cell" data-r="5" data-c="2"></div>
+        <div class="cell" data-r="5" data-c="3"></div>
+        <div class="cell" data-r="5" data-c="4"></div>
+        <div class="cell" data-r="5" data-c="5"></div>
+        <div class="cell" data-r="5" data-c="6"></div>
+        <div class="cell" data-r="5" data-c="7"></div>
+        <div class="cell" data-r="5" data-c="8"></div>
+        <div class="cell" data-r="5" data-c="9"></div>
+        <div class="cell" data-r="5" data-c="10"></div>
+        <div class="cell" data-r="5" data-c="11"></div>
+        <div class="cell" data-r="5" data-c="12"></div>
+        <div class="cell" data-r="5" data-c="13"></div>
+        <div class="cell" data-r="5" data-c="14"></div>
+        <div class="cell" data-r="5" data-c="15"></div>
+        <div class="cell" data-r="5" data-c="16"></div>
+        <div class="cell" data-r="5" data-c="17"></div>
+        <div class="cell" data-r="6" data-c="1"></div>
+        <div class="cell" data-r="6" data-c="2"></div>
+        <div class="cell" data-r="6" data-c="3"></div>
+        <div class="cell" data-r="6" data-c="4"></div>
+        <div class="cell" data-r="6" data-c="5"></div>
+        <div class="cell" data-r="6" data-c="6"></div>
+        <div class="cell" data-r="6" data-c="7"></div>
+        <div class="cell" data-r="6" data-c="8"></div>
+        <div class="cell" data-r="6" data-c="9"></div>
+        <div class="cell" data-r="6" data-c="10"></div>
+        <div class="cell" data-r="6" data-c="11"></div>
+        <div class="cell" data-r="6" data-c="12"></div>
+        <div class="cell" data-r="6" data-c="13"></div>
+        <div class="cell" data-r="6" data-c="14"></div>
+        <div class="cell" data-r="6" data-c="15"></div>
+        <div class="cell" data-r="6" data-c="16"></div>
+        <div class="cell" data-r="6" data-c="17"></div>
+        <div class="cell" data-r="7" data-c="1"></div>
+        <div class="cell" data-r="7" data-c="2"></div>
+        <div class="cell" data-r="7" data-c="3"></div>
+        <div class="cell" data-r="7" data-c="4"></div>
+        <div class="cell" data-r="7" data-c="5"></div>
+        <div class="cell" data-r="7" data-c="6"></div>
+        <div class="cell" data-r="7" data-c="7"></div>
+        <div class="cell" data-r="7" data-c="8"></div>
+        <div class="cell" data-r="7" data-c="9"></div>
+        <div class="cell" data-r="7" data-c="10"></div>
+        <div class="cell" data-r="7" data-c="11"></div>
+        <div class="cell" data-r="7" data-c="12"></div>
+        <div class="cell" data-r="7" data-c="13"></div>
+        <div class="cell" data-r="7" data-c="14"></div>
+        <div class="cell" data-r="7" data-c="15"></div>
+        <div class="cell" data-r="7" data-c="16"></div>
+        <div class="cell" data-r="7" data-c="17"></div>
+        <div class="cell" data-r="8" data-c="1"></div>
+        <div class="cell" data-r="8" data-c="2"></div>
+        <div class="cell" data-r="8" data-c="3"></div>
+        <div class="cell" data-r="8" data-c="4"></div>
+        <div class="cell" data-r="8" data-c="5"></div>
+        <div class="cell" data-r="8" data-c="6"></div>
+        <div class="cell" data-r="8" data-c="7"></div>
+        <div class="cell" data-r="8" data-c="8"></div>
+        <div class="cell" data-r="8" data-c="9"></div>
+        <div class="cell" data-r="8" data-c="10"></div>
+        <div class="cell" data-r="8" data-c="11"></div>
+        <div class="cell" data-r="8" data-c="12"></div>
+        <div class="cell" data-r="8" data-c="13"></div>
+        <div class="cell" data-r="8" data-c="14"></div>
+        <div class="cell" data-r="8" data-c="15"></div>
+        <div class="cell" data-r="8" data-c="16"></div>
+        <div class="cell" data-r="8" data-c="17"></div>
+        <div class="cell" data-r="9" data-c="1"></div>
+        <div class="cell" data-r="9" data-c="2"></div>
+        <div class="cell" data-r="9" data-c="3"></div>
+        <div class="cell" data-r="9" data-c="4"></div>
+        <div class="cell" data-r="9" data-c="5"></div>
+        <div class="cell" data-r="9" data-c="6"></div>
+        <div class="cell" data-r="9" data-c="7"></div>
+        <div class="cell" data-r="9" data-c="8"></div>
+        <div class="cell" data-r="9" data-c="9"></div>
+        <div class="cell" data-r="9" data-c="10"></div>
+        <div class="cell" data-r="9" data-c="11"></div>
+        <div class="cell" data-r="9" data-c="12"></div>
+        <div class="cell" data-r="9" data-c="13"></div>
+        <div class="cell" data-r="9" data-c="14"></div>
+        <div class="cell" data-r="9" data-c="15"></div>
+        <div class="cell" data-r="9" data-c="16"></div>
+        <div class="cell" data-r="9" data-c="17"></div>
+        <div class="cell" data-r="10" data-c="1"></div>
+        <div class="cell" data-r="10" data-c="2"></div>
+        <div class="cell" data-r="10" data-c="3"></div>
+        <div class="cell" data-r="10" data-c="4"></div>
+        <div class="cell" data-r="10" data-c="5"></div>
+        <div class="cell" data-r="10" data-c="6"></div>
+        <div class="cell" data-r="10" data-c="7"></div>
+        <div class="cell" data-r="10" data-c="8"></div>
+        <div class="cell" data-r="10" data-c="9"></div>
+        <div class="cell" data-r="10" data-c="10"></div>
+        <div class="cell" data-r="10" data-c="11"></div>
+        <div class="cell" data-r="10" data-c="12"></div>
+        <div class="cell" data-r="10" data-c="13"></div>
+        <div class="cell" data-r="10" data-c="14"></div>
+        <div class="cell" data-r="10" data-c="15"></div>
+        <div class="cell" data-r="10" data-c="16"></div>
+        <div class="cell" data-r="10" data-c="17"></div>
+        <div class="cell" data-r="11" data-c="1"></div>
+        <div class="cell" data-r="11" data-c="2"></div>
+        <div class="cell" data-r="11" data-c="3"></div>
+        <div class="cell" data-r="11" data-c="4"></div>
+        <div class="cell" data-r="11" data-c="5"></div>
+        <div class="cell" data-r="11" data-c="6"></div>
+        <div class="cell" data-r="11" data-c="7"></div>
+        <div class="cell" data-r="11" data-c="8"></div>
+        <div class="cell" data-r="11" data-c="9"></div>
+        <div class="cell" data-r="11" data-c="10"></div>
+        <div class="cell" data-r="11" data-c="11"></div>
+        <div class="cell" data-r="11" data-c="12"></div>
+        <div class="cell" data-r="11" data-c="13"></div>
+        <div class="cell" data-r="11" data-c="14"></div>
+        <div class="cell" data-r="11" data-c="15"></div>
+        <div class="cell" data-r="11" data-c="16"></div>
+        <div class="cell" data-r="11" data-c="17"></div>
+        <div class="cell" data-r="12" data-c="1"></div>
+        <div class="cell" data-r="12" data-c="2"></div>
+        <div class="cell" data-r="12" data-c="3"></div>
+        <div class="cell" data-r="12" data-c="4"></div>
+        <div class="cell" data-r="12" data-c="5"></div>
+        <div class="cell" data-r="12" data-c="6"></div>
+        <div class="cell" data-r="12" data-c="7"></div>
+        <div class="cell" data-r="12" data-c="8"></div>
+        <div class="cell" data-r="12" data-c="9"></div>
+        <div class="cell" data-r="12" data-c="10"></div>
+        <div class="cell" data-r="12" data-c="11"></div>
+        <div class="cell" data-r="12" data-c="12"></div>
+        <div class="cell" data-r="12" data-c="13"></div>
+        <div class="cell" data-r="12" data-c="14"></div>
+        <div class="cell" data-r="12" data-c="15"></div>
+        <div class="cell" data-r="12" data-c="16"></div>
+        <div class="cell" data-r="12" data-c="17"></div>
+      </div>
+    </section>
+
+    <footer class="menubar">
+      <button class="btn help">Help</button>
+      <button class="btn enquiries">Enquiries</button>
+      <button class="btn reports">Reports</button>
+      <button class="btn setup">Setup</button>
+    </footer>
+  </main>
+</body>
+</html>
